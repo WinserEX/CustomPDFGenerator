@@ -29,16 +29,17 @@ form.addEventListener('submit', (e) => {
     let p5 = document.createElement('P');
     p5.innerHTML = form.elements.salesfloorQuery.value;
     approvedBy.append(p5);
+
+    //Date
+    let date = document.querySelector('#date')
+    let p6 = document.createElement('P');
+    let today = new Date();
+    let daDate = `${today.getDay()}/${today.getMonth()}/${today.getFullYear()}`;
+    p6.innerHTML = daDate;
+    date.append(p6);
     
 })
 
 
 
 
-//Date
-let date = document.querySelector('#date')
-let p6 = document.createElement('P');
-let today = new Date();
-let daDate = `${today.getDay()}/${today.getMonth()}/${today.getFullYear()}`;
-p6.innerHTML = daDate;
-date.append(p6);
