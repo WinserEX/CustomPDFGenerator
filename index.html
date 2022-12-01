@@ -12,17 +12,30 @@
     <!-- Add data -->
     <form id="form">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          <label for="exampleInputEmail1" class="form-label">Member Name</label>
+          <!-- memberQuery -->
+          <input type="text" class="form-control" id="inputMember" aria-describedby="memberHelp" name="memberQuery">
+          <div id="memberHelp" class="form-text">Add member's name.</div>
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <!-- pointsQuery -->
+          <label for="pointsInput" class="form-label">Points</label>
+          <input type="number" class="form-control" id="pointsInput" name="pointsQuery">
         </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <div class="mb-3">
+          <!-- contractidQuery -->
+          <label for="pointsInput" class="form-label">Contract ID</label>
+          <input type="number" class="form-control" id="contractInput" name="contractidQuery">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Sales Floor</label>
+          <!-- salesfloorQuery -->
+          <input type="text" class="form-control" id="inputMember" aria-describedby="memberHelp" name="salesfloorQuery">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Approved by:</label>
+          <!-- approvedbyQuery -->
+          <input type="text" class="form-control" id="inputMember" aria-describedby="memberHelp" name="approvedbyQuery">
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
@@ -46,7 +59,7 @@
           <div class="row text-center">
             <div class="col-12">
               <p>
-                <!--Member-->
+                <!--Points-->
                 El uso de <span id="points"></span> puntos en cualquiera de los hoteles de la cadena:
               </p>
             </div>
@@ -59,7 +72,9 @@
             <div class="col-6 text-end">Sala de Ventas</div>
           </div>
           <div class="row">
+            <!--Contract ID-->
             <div class="col-6 text-start" id="contractID"></div>
+            <!--Sales Floor-->
             <div class="col-6 text-end" id="salesFloor"></div>
           </div>
           <div class="row">
@@ -67,7 +82,9 @@
             <div class="col-6 text-end">Fecha de Expedicion</div>
           </div>
           <div class="row">
+            <!--Approved By-->
             <div class="col-6 text-start" id="approvedBy"></div>
+            <!--Date-->
             <div class="col-6 text-end" id="date"></div>
           </div>
         </div>  
